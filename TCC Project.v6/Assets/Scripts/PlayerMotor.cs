@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMotor : MonoBehaviour {
@@ -7,8 +8,8 @@ public class PlayerMotor : MonoBehaviour {
     public GameObject activeModel;
     [HideInInspector]
     public Animator anim;
-    [HideInInspector]
-    public Rigidbody rb;
+	[HideInInspector]
+	NavMeshAgent agent;
 
     [Header("Inputs")]
     public float horizontal;
@@ -30,7 +31,7 @@ public class PlayerMotor : MonoBehaviour {
     public void Init()
     {
         SetupAnimator();
-        rb = GetComponent<Rigidbody>();
+		agent = GetComponent<NavMeshAgent>();
         /*
          //Useless with navMesh Agent
         rb.angularDrag = 999;
@@ -59,13 +60,6 @@ public class PlayerMotor : MonoBehaviour {
 
     public void Tick(float d)
     {
-		rb.drag = (movAmount > 0) ? 0 : 4;
-        /*
-        if (movAmount > 0)
-            rb.drag = 0;
-        else
-            rb.drag = 4;
-        */
         PerformMovement(d);
 
         //HandleMovementAnimations(d);
@@ -74,14 +68,15 @@ public class PlayerMotor : MonoBehaviour {
 	void PerformMovement(float d){
 		if(movDir != Vector3.zero){
 			//transform.Translate(-movDir * (speed * movAmount) * d);
-			rb.velocity = movDir * (speed*movAmount);
+			//rb.velocity = movDir * (speed*movAmount);
+			agent.Move(movDir * (speed * movAmount) * d);
 
             Vector3 targetDir = movDir;
             targetDir.y = 0;
             //targetDir = transform.forward;
             Quaternion tr = Quaternion.LookRotation(targetDir);
-            Quaternion targetRotation = Quaternion.Slerp(transform.rotation, tr, d * movAmount * rotateSpeed);
-            transform.rotation = targetRotation;
+            Quaternion targetRotation = Quaternion.Slerp(activeModel.transform.rotation, tr, d * movAmount * rotateSpeed);
+			activeModel.transform.rotation = targetRotation;
 		}
 	}
 
