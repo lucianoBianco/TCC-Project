@@ -161,12 +161,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeModel: {fileID: 0}
   anim: {fileID: 0}
+  agent: {fileID: 0}
+  rb: {fileID: 0}
   horizontal: 0
   vertical: 0
   movDir: {x: 0, y: 0, z: 0}
   movAmount: 0
   speed: 5
   rotateSpeed: 5
+  movFINAL: {x: 0, y: 0, z: 0}
   musicMode: 0
   delta: 0
 --- !u!54 &23155441
@@ -177,8 +180,8 @@ Rigidbody:
   m_GameObject: {fileID: 23155438}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 4
-  m_AngularDrag: 9000
+  m_Drag: 1
+  m_AngularDrag: 10000
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -770,6 +773,14 @@ Prefab:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: ae02a22f1b8d14810a92c3d05d1e9072, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: ae02a22f1b8d14810a92c3d05d1e9072, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae02a22f1b8d14810a92c3d05d1e9072, type: 3}
   m_IsPrefabParent: 0
@@ -800,8 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e7b6aecc6cabd4c9ca9506b6ef5a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notes: "Aqui, pessoar, \xE9 onde ceis anota coisa pro Lulu ajeitar, s\xF4\n\n\n\nTODO
-    List:\n-Jump"
+  notes: "\xC9 aqui que oceis nota tudo qui quiz\xE9 pa eu da uma oiada dispois\n\n\nTODO:\n-Jump;\n-Shater;\n-Interaction;"
 --- !u!4 &1288415445
 Transform:
   m_ObjectHideFlags: 0
@@ -815,6 +825,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1349532375 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100020, guid: ae02a22f1b8d14810a92c3d05d1e9072, type: 3}
+  m_PrefabInternal: {fileID: 1165439153}
+--- !u!64 &1349532379
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1349532375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300018, guid: ae02a22f1b8d14810a92c3d05d1e9072, type: 3}
+--- !u!1 &1382842076 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100022, guid: ae02a22f1b8d14810a92c3d05d1e9072, type: 3}
+  m_PrefabInternal: {fileID: 1165439153}
+--- !u!64 &1382842080
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1382842076}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300022, guid: ae02a22f1b8d14810a92c3d05d1e9072, type: 3}
 --- !u!1001 &1695840080
 Prefab:
   m_ObjectHideFlags: 0

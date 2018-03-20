@@ -90,6 +90,9 @@ public class PlayerController : MonoBehaviour {
     {
         xMov = Input.GetAxisRaw("Horizontal");
         yMov = Input.GetAxisRaw("Vertical");
+
+
+		motor.Jump(Input.GetButtonDown("Jump"));
     }
 
     void UpdateMotor()

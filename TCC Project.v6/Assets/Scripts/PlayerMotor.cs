@@ -9,7 +9,9 @@ public class PlayerMotor : MonoBehaviour {
     [HideInInspector]
     public Animator anim;
 	[HideInInspector]
-	NavMeshAgent agent;
+	public NavMeshAgent agent;
+	[HideInInspector]
+	public Rigidbody rb;
 
     [Header("Inputs")]
     public float horizontal;
@@ -20,11 +22,13 @@ public class PlayerMotor : MonoBehaviour {
     [Header("Stats")]
     public float speed = 5f;
     public float rotateSpeed = 5f;
+	public Vector3 movFINAL = Vector3.zero;
+
 
     [Header("States")]
     public bool musicMode;
 
-
+	bool jump = false;
     [HideInInspector]
     public float delta;
 
@@ -32,12 +36,9 @@ public class PlayerMotor : MonoBehaviour {
     {
         SetupAnimator();
 		agent = GetComponent<NavMeshAgent>();
-        /*
-         //Useless with navMesh Agent
-        rb.angularDrag = 999;
-        rb.drag = 4;
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-	    */
+		rb = GetComponent<Rigidbody> ();
+		//Useless with navMesh Agent
+	    
     }
 
     void SetupAnimator()
@@ -61,17 +62,19 @@ public class PlayerMotor : MonoBehaviour {
     public void Tick(float d)
     {
         PerformMovement(d);
-
-        //HandleMovementAnimations(d);
     }
 
 	void PerformMovement(float d){
 		if(movDir != Vector3.zero){
 			//transform.Translate(-movDir * (speed * movAmount) * d);
 			//rb.velocity = movDir * (speed*movAmount);
-			agent.Move(movDir * (speed * movAmount) * d);
-
-            Vector3 targetDir = movDir;
+			movFINAL = movDir * (speed * movAmount) * d;
+			if(!jump)
+			agent.Move(movFINAL);
+			Vector3 movRB = movFINAL;
+			movRB.y = 0;
+			rb.velocity = movRB;
+			Vector3 targetDir = movDir;
             targetDir.y = 0;
             //targetDir = transform.forward;
             Quaternion tr = Quaternion.LookRotation(targetDir);
@@ -80,11 +83,29 @@ public class PlayerMotor : MonoBehaviour {
 		}
 	}
 
-    void HandleMovementAnimations(float d)
-    {
-        anim.SetFloat("vertical", movAmount, 0.4f, d);
-    }
+	public void Jump(bool isJump){
+		if (isJump) {
+			jump = true;
+			print ("pula, viado");
+			agent.enabled = false;
+			rb.AddForce ((Vector3.up*400)+movFINAL*50);
 
+			print (rb.velocity);
+			isJump = false;
+			//yield return new WaitForSeconds (0.5f);
+		}
+
+
+	}
+
+	void OnCollisionEnter(Collision collision){
+
+		if (collision.gameObject.tag == "Ground") {
+			agent.enabled = true;
+			jump = false;
+		}
+
+	}
 
     /*Brackeys
     //recebe o vetor de movimento
