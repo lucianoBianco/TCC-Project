@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	[SerializeField]
-	private float speed = 5f;
+	//private float speed = 5f;
 
 	public float turnSmoothTime = .2f;
 	float turnSmoothVelocity;
@@ -16,12 +16,15 @@ public class PlayerController : MonoBehaviour {
 
 
     private PlayerMotor motor;
+    private GameObject interactibleFocus;
 
 	Camera cam;
 	Transform camPosition;
     CameraController camManager;
+    private Properties props;
+    
 
-	void Start () {
+    void Start () {
         /*//Brackeys
 		cam = Camera.main;
 		camPosition = Camera.main.transform;
@@ -90,9 +93,14 @@ public class PlayerController : MonoBehaviour {
     {
         xMov = Input.GetAxisRaw("Horizontal");
         yMov = Input.GetAxisRaw("Vertical");
-
-
+        
 		motor.Jump(Input.GetButtonDown("Jump"));
+
+        if (interactibleFocus != null)
+        {
+            props = interactibleFocus.GetComponent<Properties>();
+            props.Action(Input.GetButtonDown("Ação1"));
+        }
     }
 
     void UpdateMotor()
@@ -108,5 +116,34 @@ public class PlayerController : MonoBehaviour {
         motor.horizontal = xMov;
         motor.vertical = yMov;
 
+    }
+
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == ("Interactible"))
+        {
+            if (interactibleFocus != null)
+            {
+                float distMeOld = Vector3.Distance(interactibleFocus.transform.position, transform.position);
+                float distMeNew = Vector3.Distance(other.gameObject.transform.position, transform.position);
+                if(distMeNew < distMeOld)
+                {
+                    interactibleFocus = other.gameObject;
+                }
+            }
+            else
+                interactibleFocus = other.gameObject;
+
+
+            print("GOAL");
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject == interactibleFocus)
+        {
+            interactibleFocus = null;
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMotor : MonoBehaviour {
@@ -28,9 +29,13 @@ public class PlayerMotor : MonoBehaviour {
     [Header("States")]
     public bool musicMode;
 
-	bool jump = false;
+	
     [HideInInspector]
     public float delta;
+
+
+    Vector3 movRB;
+    bool jump = false;
 
     public void Init()
     {
@@ -66,33 +71,45 @@ public class PlayerMotor : MonoBehaviour {
 
 	void PerformMovement(float d){
 		if(movDir != Vector3.zero){
-			//transform.Translate(-movDir * (speed * movAmount) * d);
-			//rb.velocity = movDir * (speed*movAmount);
-			movFINAL = movDir * (speed * movAmount) * d;
-			if(!jump)
-			agent.Move(movFINAL);
-			Vector3 movRB = movFINAL;
-			movRB.y = 0;
-			rb.velocity = movRB;
+            //transform.Translate(-movDir * (speed * movAmount) * d);
+            //rb.velocity = movDir * (speed*movAmount);
+            delta = d;
+            
+            if (!jump)
+            {
+                movFINAL = movDir * (speed * movAmount) * delta;
+                
+                agent.Move(movFINAL);
+            }
+            else
+            { }
 			Vector3 targetDir = movDir;
             targetDir.y = 0;
             //targetDir = transform.forward;
             Quaternion tr = Quaternion.LookRotation(targetDir);
-            Quaternion targetRotation = Quaternion.Slerp(activeModel.transform.rotation, tr, d * movAmount * rotateSpeed);
+            Quaternion targetRotation = Quaternion.Slerp(activeModel.transform.rotation, tr, delta * movAmount * rotateSpeed);
 			activeModel.transform.rotation = targetRotation;
 		}
-	}
+        else
+        movFINAL = Vector3.zero;
+
+
+        movRB = movFINAL;
+    }
 
 	public void Jump(bool isJump){
-		if (isJump) {
+		if (isJump && !jump) {
 			jump = true;
 			print ("pula, viado");
 			agent.enabled = false;
-			rb.AddForce ((Vector3.up*400)+movFINAL*50);
-
-			print (rb.velocity);
+            rb.velocity = Vector3.zero;
+            float rbY = rb.velocity.y;
+            float rbX = movRB.x / delta;
+            float rbZ = movRB.z / delta;
+            Vector3 newVel = new Vector3(rbX, rbY, rbZ);
+            rb.velocity = newVel;
+            rb.AddForce ((Vector3.up) * 400);
 			isJump = false;
-			//yield return new WaitForSeconds (0.5f);
 		}
 
 
@@ -102,6 +119,7 @@ public class PlayerMotor : MonoBehaviour {
 
 		if (collision.gameObject.tag == "Ground") {
 			agent.enabled = true;
+            rb.velocity = Vector3.zero;
 			jump = false;
 		}
 

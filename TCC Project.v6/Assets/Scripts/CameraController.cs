@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour {
 	public Vector2 pitchMinMax = new Vector2 (-35, 35);
 
 	public float zoomSpeed = 4f;
-	private float currentZoom = 10f;
+	//private float currentZoom = 10f;
 	public Vector2 zoomMinMax = new Vector2 (5f,15f);
 
 	public float rotationSmoothTime = .12f;

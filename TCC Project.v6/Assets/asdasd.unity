@@ -180,7 +180,7 @@ Rigidbody:
   m_GameObject: {fileID: 23155438}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 1
+  m_Drag: 0
   m_AngularDrag: 10000
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -198,7 +198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64af3fecc6c50e2489171024dcd8b7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   turnSmoothTime: 0.2
 --- !u!195 &23155443
 NavMeshAgent:
@@ -557,12 +556,13 @@ GameObject:
   - component: {fileID: 1161561714}
   - component: {fileID: 1161561713}
   - component: {fileID: 1161561712}
+  - component: {fileID: 1161561718}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Interactible
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &1161561712
 MonoBehaviour:
@@ -617,10 +617,10 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1161561711}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1161561715
 MeshFilter:
@@ -636,12 +636,23 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1161561711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.42, y: 2.799, z: 19.27}
+  m_LocalPosition: {x: -5.42, y: 2.33, z: 19.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1161561718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1161561711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b442beac8050fe4f9e0d0e00337f8ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1165439153
 Prefab:
   m_ObjectHideFlags: 0
@@ -811,7 +822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e7b6aecc6cabd4c9ca9506b6ef5a89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notes: "\xC9 aqui que oceis nota tudo qui quiz\xE9 pa eu da uma oiada dispois\n\n\nTODO:\n-Jump;\n-Shater;\n-Interaction;"
+  notes: "\xC9 aqui que oceis nota tudo qui quiz\xE9 pa eu da uma oiada dispois\n\n\nTODO:\n-Shater;\n-Interaction;"
+  aparenciaDaJohanna: 0
 --- !u!4 &1288415445
 Transform:
   m_ObjectHideFlags: 0
