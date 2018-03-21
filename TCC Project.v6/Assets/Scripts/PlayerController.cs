@@ -76,6 +76,9 @@ public class PlayerController : MonoBehaviour {
         delta = Time.deltaTime;
 
 		//camManager.Tick(delta);
+		if (interactibleFocus != null) {
+			props = interactibleFocus.GetComponent<Properties> ();
+		}
         
     }
 
@@ -96,11 +99,8 @@ public class PlayerController : MonoBehaviour {
         
 		motor.Jump(Input.GetButtonDown("Jump"));
 
-        if (interactibleFocus != null)
-        {
-            props = interactibleFocus.GetComponent<Properties>();
-            props.Action(Input.GetButtonDown("Ação1"));
-        }
+		if (props != null)
+			props.Action (Input.GetButtonDown ("Ação1"));
     }
 
     void UpdateMotor()
@@ -125,12 +125,6 @@ public class PlayerController : MonoBehaviour {
         {
             if (interactibleFocus != null)
             {
-                float distMeOld = Vector3.Distance(interactibleFocus.transform.position, transform.position);
-                float distMeNew = Vector3.Distance(other.gameObject.transform.position, transform.position);
-                if(distMeNew < distMeOld)
-                {
-                    interactibleFocus = other.gameObject;
-                }
             }
             else
                 interactibleFocus = other.gameObject;
