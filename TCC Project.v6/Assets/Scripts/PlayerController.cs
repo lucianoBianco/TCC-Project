@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour {
-
-	[SerializeField]
-	//private float speed = 5f;
-
+    public enum Controller { Active, Inactive }
+    [SerializeField]
+    //private float speed = 5f;
+    public Controller myController;
 	public float turnSmoothTime = .2f;
 	float turnSmoothVelocity;
     float xMov;
     float yMov;
 
     float delta;
+
+    public bool isDefault = false;
 
 
     private PlayerMotor motor;
@@ -30,11 +32,16 @@ public class PlayerController : MonoBehaviour {
 		camPosition = Camera.main.transform;
         */
 
+        camManager = CameraController.singleton;
+        if (isDefault)
+        {
+            myController = Controller.Active;
+            camManager.Init(this.transform);
+        }
+        else
+            myController = Controller.Inactive;
 		motor = GetComponent<PlayerMotor>();
         motor.Init();
-
-        camManager = CameraController.singleton;
-        camManager.Init(this.transform);
 
 	}
 
@@ -85,10 +92,18 @@ public class PlayerController : MonoBehaviour {
 
     void FixedUpdate()
     {
-		delta = Time.fixedDeltaTime;
-		camManager.Tick(delta);
-		GetInputs();
-		UpdateMotor();
+        delta = Time.fixedDeltaTime;
+        switch (myController)
+        {
+            case Controller.Active:
+                camManager.Tick(delta);
+                GetInputs();
+                UpdateMotor();
+                break;
+            case Controller.Inactive:
+
+                break;
+        }
 		motor.Tick(delta);
     }
 
@@ -96,11 +111,15 @@ public class PlayerController : MonoBehaviour {
     {
         xMov = Input.GetAxisRaw("Horizontal");
         yMov = Input.GetAxisRaw("Vertical");
-        
-		motor.Jump(Input.GetButtonDown("Jump"));
 
-		if (props != null)
-			props.Action (Input.GetButtonDown ("Ação1"));
+        motor.Jump(Input.GetButtonDown("Jump"));
+        if (myController == Controller.Active)
+        {
+            if (props != null)
+            {
+                props.Action(Input.GetButtonDown("Ação1"));
+            }
+        }
     }
 
     void UpdateMotor()
@@ -121,23 +140,29 @@ public class PlayerController : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == ("Interactible"))
+        if (myController == Controller.Active)
         {
-            if (interactibleFocus != null)
+            if (other.gameObject.tag == ("Interactible"))
             {
+                if (interactibleFocus != null)
+                {
+                }
+                else
+                    interactibleFocus = other.gameObject;
+
+
+                print("GOAL");
             }
-            else
-                interactibleFocus = other.gameObject;
-
-
-            print("GOAL");
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject == interactibleFocus)
+        if (myController == Controller.Active)
         {
-            interactibleFocus = null;
+            if (other.gameObject == interactibleFocus)
+            {
+                interactibleFocus = null;
+            }
         }
     }
 }

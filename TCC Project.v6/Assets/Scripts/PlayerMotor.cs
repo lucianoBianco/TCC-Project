@@ -98,6 +98,7 @@ public class PlayerMotor : MonoBehaviour {
     }
 
 	public void Jump(bool isJump){
+        
 		if (isJump && !jump) {
 			jump = true;
 			print ("pula, viado");
