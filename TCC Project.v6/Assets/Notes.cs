@@ -7,6 +7,4 @@ public class Notes : MonoBehaviour {
 	[TextArea(10,1000)]
 	public string notes;
 
-
-    public bool aparenciaDaJohanna;
 }

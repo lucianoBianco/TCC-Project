@@ -78,6 +78,7 @@ public class PlayerMotor : MonoBehaviour {
             if (!jump)
             {
                 movFINAL = movDir * (speed * movAmount) * delta;
+                rb.velocity = Vector3.zero;
                 
                 agent.Move(movFINAL);
             }

@@ -12,6 +12,8 @@ public class GlobalVariables : MonoBehaviour {
 	public GameObject door1;
 	public GameObject door2;
 	public GameObject door3;
+    public GameObject tree;
+    public GameObject brokenTree;
 
 
 	private Light light;
@@ -24,6 +26,8 @@ public class GlobalVariables : MonoBehaviour {
 		if (lock1 && lock2 && lock3) {
 			print ("YAY");
 			opened = true;
+            Destroy(tree);
+            Instantiate(brokenTree,tree.transform.position, tree.transform.rotation);
 		}
 	}
 
