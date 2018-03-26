@@ -96,10 +96,12 @@
      <Compile Include="Assets\Environment\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
      <Compile Include="Assets\Environment\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
      <Compile Include="Assets\Environment\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-     <Compile Include="Assets\GlobalVariables.cs" />
      <Compile Include="Assets\Notes.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CharacterAnimation.cs" />
+     <Compile Include="Assets\Scripts\CharacterSwitch.cs" />
+     <Compile Include="Assets\Scripts\EnvCharChange.cs" />
+     <Compile Include="Assets\Scripts\GlobalVariables.cs" />
      <Compile Include="Assets\Scripts\Interactibles.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerMotor.cs" />
