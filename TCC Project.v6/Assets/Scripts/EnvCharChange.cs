@@ -23,10 +23,19 @@ public class EnvCharChange : MonoBehaviour {
 		CurrMats = rend.materials;
 		CurrMats[matIndex] = TreeColorMat [0];
 		rend.materials = CurrMats;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
 	}
 	public void Tommy(){
 		CurrMats = rend.materials;
 		CurrMats[matIndex] = TreeColorMat [1];
 		rend.materials = CurrMats;
+<<<<<<< HEAD
     }
+=======
+		print ("VAI");
+	}
+>>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
 }

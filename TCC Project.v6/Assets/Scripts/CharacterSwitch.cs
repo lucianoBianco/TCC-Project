@@ -9,7 +9,10 @@ public class CharacterSwitch : MonoBehaviour {
     CameraController camManager;
 	EnvCharChange[] envChangers;
 	public GameObject world;
+<<<<<<< HEAD
     public GameObject particlesTommy;
+=======
+>>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
     // Use this for initialization
     void Start () {
         camManager = CameraController.singleton;
@@ -25,9 +28,16 @@ public class CharacterSwitch : MonoBehaviour {
                 charJohanna.GetComponent<PlayerController>().myController = PlayerController.Controller.Inactive;
                 charTommy.GetComponent<PlayerController>().myController = PlayerController.Controller.Active;
                 camManager.target = charTommy.transform;
+<<<<<<< HEAD
                 particlesTommy.SetActive(true);
 				foreach (EnvCharChange changer in envChangers) {
 					changer.Tommy ();
+=======
+
+				foreach (EnvCharChange changer in envChangers) {
+					changer.Tommy ();
+					print ("PIMBA");
+>>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
 				}
             }
             else
@@ -35,7 +45,11 @@ public class CharacterSwitch : MonoBehaviour {
                 charJohanna.GetComponent<PlayerController>().myController = PlayerController.Controller.Active;
                 charTommy.GetComponent<PlayerController>().myController = PlayerController.Controller.Inactive;
                 camManager.target = charJohanna.transform;
+<<<<<<< HEAD
                 particlesTommy.SetActive(false);
+=======
+
+>>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
 				foreach (EnvCharChange changer in envChangers)
 					changer.Johanna ();
             }

@@ -1,5 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GlobalVariablesCaverna.cs">
     <Files>
       <File FileName="Assets\Scripts\TommySkills.cs" Line="66" Column="35" />
@@ -7,6 +8,12 @@
       <File FileName="Assets\Scripts\GlobalVariables.cs" Line="39" Column="18" />
       <File FileName="Assets\Scripts\BoardInputs.cs" Line="15" Column="10" />
       <File FileName="Assets\Scripts\GlobalVariablesCaverna.cs" Line="30" Column="88" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EnvCharChange.cs">
+    <Files>
+      <File FileName="Assets\Scripts\EnvCharChange.cs" Line="11" Column="21" />
+      <File FileName="Assets\Scripts\CharacterSwitch.cs" Line="40" Column="21" />
+>>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

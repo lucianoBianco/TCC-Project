@@ -96,6 +96,7 @@
      <Compile Include="Assets\Environment\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
      <Compile Include="Assets\Environment\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
      <Compile Include="Assets\Environment\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+<<<<<<< HEAD
      <Compile Include="Assets\Importar\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
      <Compile Include="Assets\Importar\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
      <Compile Include="Assets\Importar\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -147,6 +148,14 @@
      <Compile Include="Assets\Scripts\EnvCharChange.cs" />
      <Compile Include="Assets\Scripts\GlobalVariables.cs" />
      <Compile Include="Assets\Scripts\GlobalVariablesCaverna.cs" />
+=======
+     <Compile Include="Assets\Notes.cs" />
+     <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\CharacterAnimation.cs" />
+     <Compile Include="Assets\Scripts\CharacterSwitch.cs" />
+     <Compile Include="Assets\Scripts\EnvCharChange.cs" />
+     <Compile Include="Assets\Scripts\GlobalVariables.cs" />
+>>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
      <Compile Include="Assets\Scripts\Interactibles.cs" />
      <Compile Include="Assets\Scripts\JohannaSkills.cs" />
      <Compile Include="Assets\Scripts\Note.cs" />
