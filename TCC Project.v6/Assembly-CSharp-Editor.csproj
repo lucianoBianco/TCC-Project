@@ -85,6 +85,7 @@
      <Compile Include="Assets\Environment\PostProcessing\Editor\Utils\EditorResources.cs" />
      <Compile Include="Assets\Environment\PostProcessing\Editor\Utils\FxStyles.cs" />
      <Compile Include="Assets\Environment\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
+     <Compile Include="Assets\Importar\Volumetric Lights\Editor\ImageEffects\TonemappingEditor.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -165,6 +166,12 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.3-1.0.56-Editor">
+ <HintPath>C:/Users/LucianoMartins/Documents/TCC/TCC-Project/TCC Project.v6/Assets/Importar/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.3-1.0.56-Runtime">
+ <HintPath>C:/Users/LucianoMartins/Documents/TCC/TCC-Project/TCC Project.v6/Assets/Importar/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/Users/LucianoMartins/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>

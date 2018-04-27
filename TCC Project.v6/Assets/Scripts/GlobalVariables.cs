@@ -14,7 +14,13 @@ public class GlobalVariables : MonoBehaviour {
 	public GameObject door3;
     public GameObject tree;
     public GameObject brokenTree;
+	public GameObject board;
+	public GameObject musicTree;
+	public GameObject spawner;
+	public GameObject boardPrefab;
 
+
+	public bool playingSong = false;
 
 	private Light light;
 	void Start(){
@@ -30,7 +36,28 @@ public class GlobalVariables : MonoBehaviour {
             Instantiate(brokenTree,tree.transform.position, tree.transform.rotation);
 		}
 	}
+	public void Play(){
+		if (playingSong == false) {
+			playingSong = true;
+			Instantiate (boardPrefab, spawner.transform.position, spawner.transform.rotation, spawner.transform);
+		}
+	}
 
+	public void Destroy(){
+        board = GameObject.Find("BoardMusical(Clone)");
+		board.GetComponent<BoardController> ().Destruir ();
+		playingSong = false;
+	}
+
+	public void MusicOk(){
+		StartCoroutine (Destruir());
+	}
+	IEnumerator Destruir(){
+		Destroy (musicTree);
+		Instantiate(brokenTree, musicTree.transform.position, musicTree.transform.rotation);
+		yield return new WaitForSeconds(3f);
+		Destroy ();
+	}
 
 	public void Interact(GameObject go){
 		if (!opened) {
@@ -44,10 +71,8 @@ public class GlobalVariables : MonoBehaviour {
 				light = door3.GetComponent<Light> ();
 				light.enabled = false;
 				lock3 = false;
-				print ("Lock1 On");
 			} else if (go == door2) {
 				if (lock1) {
-					print ("Lock2 On");
 					lock2 = true;
 					light = door2.GetComponent<Light> ();
 					light.enabled = true;
@@ -61,11 +86,9 @@ public class GlobalVariables : MonoBehaviour {
 					light = door3.GetComponent<Light> ();
 					light.enabled = false;
 					lock3 = false;
-					print ("PEH");
 				}
 			} else if (go == door3) {
 				if (lock2) {
-					print ("Lock3 On");
 					light = door3.GetComponent<Light> ();
 					light.enabled = true;
 					lock3 = true;
@@ -80,7 +103,6 @@ public class GlobalVariables : MonoBehaviour {
 					light = door3.GetComponent<Light> ();
 					light.enabled = false;
 					lock3 = false;
-					print ("PEH");
 				}
 			}
 		}

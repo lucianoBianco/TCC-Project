@@ -28,8 +28,12 @@ public class PlayerMotor : MonoBehaviour {
 
     [Header("States")]
     public bool musicMode;
+	public bool lockOn;
 
-	
+	[Header("Other")]
+	public Transform lockonTarget;
+
+
     [HideInInspector]
     public float delta;
 
@@ -74,13 +78,18 @@ public class PlayerMotor : MonoBehaviour {
             //transform.Translate(-movDir * (speed * movAmount) * d);
             //rb.velocity = movDir * (speed*movAmount);
             delta = d;
-            
+
             if (!jump)
             {
                 movFINAL = movDir * (speed * movAmount) * delta;
                 rb.velocity = Vector3.zero;
-                
-                agent.Move(movFINAL);
+                if (transform.GetComponent<PlayerController>().myController == PlayerController.Controller.Active)
+                    agent.Move(movFINAL);
+                else
+                {
+                    agent.Move(Vector3.zero);
+                    movAmount = 0;
+                }
             }
             else
             { }
@@ -102,7 +111,6 @@ public class PlayerMotor : MonoBehaviour {
         
 		if (isJump && !jump) {
 			jump = true;
-			print ("pula, viado");
 			agent.enabled = false;
             rb.velocity = Vector3.zero;
             float rbY = rb.velocity.y;
@@ -110,7 +118,7 @@ public class PlayerMotor : MonoBehaviour {
             float rbZ = movRB.z / delta;
             Vector3 newVel = new Vector3(rbX, rbY, rbZ);
             rb.velocity = newVel;
-            rb.AddForce ((Vector3.up) * 400);
+            rb.AddForce ((Vector3.up) * 250);
 			isJump = false;
 		}
 

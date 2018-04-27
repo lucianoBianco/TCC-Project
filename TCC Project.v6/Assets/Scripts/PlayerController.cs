@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(PlayerMotor))]
@@ -11,11 +12,15 @@ public class PlayerController : MonoBehaviour {
 	float turnSmoothVelocity;
     float xMov;
     float yMov;
+	TommySkills skillScript;
 
     float delta;
 
     public bool isDefault = false;
 
+	bool rightAxis_down;
+
+    bool musicMode = false;
 
     private PlayerMotor motor;
     private GameObject interactibleFocus;
@@ -42,19 +47,19 @@ public class PlayerController : MonoBehaviour {
             myController = Controller.Inactive;
 		motor = GetComponent<PlayerMotor>();
         motor.Init();
-
 	}
 
 
 	void Update () {
 		//right click
+		/*
 		if(Input.GetMouseButton(1)){
 			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 			if(Physics.Raycast(ray, out hit)){
 
 			}
-		}
+		}*/
         /*
 		//recebendo os inputs de movimentação
 		xMov = Input.GetAxisRaw("Horizontal");
@@ -86,40 +91,39 @@ public class PlayerController : MonoBehaviour {
 		if (interactibleFocus != null) {
 			props = interactibleFocus.GetComponent<Properties> ();
 		}
-        
+		if (!GlobalVariablesCaverna.isPaused) {
+			switch (myController) {
+			case Controller.Active:
+				camManager.Tick (delta);
+				GetInputs ();
+				UpdateMotor ();
+				break;
+			case Controller.Inactive:
+
+				break;
+			}
+			motor.Tick (delta);
+		}
     }
 
 
     void FixedUpdate()
     {
-        delta = Time.fixedDeltaTime;
-        switch (myController)
-        {
-            case Controller.Active:
-                camManager.Tick(delta);
-                GetInputs();
-                UpdateMotor();
-                break;
-            case Controller.Inactive:
-
-                break;
-        }
-		motor.Tick(delta);
+        
     }
 
     void GetInputs()
     {
-        xMov = Input.GetAxisRaw("Horizontal");
-        yMov = Input.GetAxisRaw("Vertical");
-
-        motor.Jump(Input.GetButtonDown("Jump"));
-        if (myController == Controller.Active)
-        {
-            if (props != null)
-            {
-                props.Action(Input.GetButtonDown("Ação1"));
-            }
+		xMov = Input.GetAxisRaw ("Horizontal");
+		yMov = Input.GetAxisRaw ("Vertical");
+		motor.Jump (Input.GetButtonDown ("Jump"));
+		if (myController == Controller.Active) {
+			if (props != null) {
+				props.Action (Input.GetButtonDown ("Ação1"));
+			}
         }
+
+		rightAxis_down = Input.GetButtonUp ("Fire2");
     }
 
     void UpdateMotor()
@@ -135,6 +139,23 @@ public class PlayerController : MonoBehaviour {
         motor.horizontal = xMov;
         motor.vertical = yMov;
 
+
+		if (rightAxis_down) {
+			motor.lockOn = !motor.lockOn;
+			if (motor.lockonTarget == null)
+				motor.lockOn = false;
+			Debug.Log (motor.lockOn);
+
+			Debug.Log (camManager.lockonTarget);
+			Debug.Log (motor.lockonTarget.transform);
+			camManager.lockonTarget = motor.lockonTarget;
+			Debug.Log (camManager.lockonTarget);
+			Debug.Log (motor.lockonTarget);
+			camManager.lockOn = motor.lockOn;
+		}
+
+        
+
     }
 
 
@@ -149,9 +170,6 @@ public class PlayerController : MonoBehaviour {
                 }
                 else
                     interactibleFocus = other.gameObject;
-
-
-                print("GOAL");
             }
         }
     }
