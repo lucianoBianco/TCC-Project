@@ -11,7 +11,7 @@ NavMeshProjectSettings:
     cost: 1
   - name: Jump
     cost: 2
-  - name: 
+  - name: Asobrab
     cost: 1
   - name: 
     cost: 1
@@ -89,7 +89,7 @@ NavMeshProjectSettings:
       m_Flags: 0
   - serializedVersion: 2
     agentTypeID: -1372625422
-    agentRadius: 0.1
+    agentRadius: 0.5
     agentHeight: 4
     agentSlope: 60
     agentClimb: 1

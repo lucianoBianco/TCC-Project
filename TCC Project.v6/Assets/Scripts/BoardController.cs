@@ -4,25 +4,39 @@ using UnityEngine;
 
 public class BoardController : MonoBehaviour {
 
+//marcador de pontos do board obsoleto em 2d
 	public int points;
-	public GlobalVariables vars;
-	bool finish = false;
+	public GlobalVariablesCaverna vars;
+	private AudioSource source;
+	bool playing = false;
 
     void Start()
     {
-        vars = GameObject.Find("World State").GetComponent<GlobalVariables>();
+        vars = GameObject.Find("WorldManager").GetComponent<GlobalVariablesCaverna>();
+		source = GetComponent<AudioSource> ();
+		StartCoroutine(PlayMusic());
     }
 
 
     void Update(){
-		if (!finish && points == 100) {
+    	Debug.Log(source.isPlaying);
+		if (!source.isPlaying && points >= 100) {
 			vars.MusicOk ();
-			finish = false;
+		} else if (!source.isPlaying && playing) {
+			vars.MusicFail ();
 		}
 	}
 
 	public void Destruir(){
 		Destroy (gameObject);
-
+	}
+	IEnumerator PlayMusic(){
+		float delay = 5f;
+		while(delay > 0){
+			delay -= Time.deltaTime;
+			yield return null;
+		}
+		source.Play();
+		playing = true;
 	}
 }

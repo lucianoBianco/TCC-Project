@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour {
+
+	// controla os inputs de movimentação dos personagens
     public enum Controller { Active, Inactive }
     [SerializeField]
     //private float speed = 5f;
@@ -20,15 +22,13 @@ public class PlayerController : MonoBehaviour {
 
 	bool rightAxis_down;
 
-    bool musicMode = false;
-
     private PlayerMotor motor;
     private GameObject interactibleFocus;
 
 	Camera cam;
 	Transform camPosition;
     CameraController camManager;
-    private Properties props;
+    public Properties props;
     
 
     void Start () {
@@ -37,16 +37,17 @@ public class PlayerController : MonoBehaviour {
 		camPosition = Camera.main.transform;
         */
 
+		motor = GetComponent<PlayerMotor>();
+		motor.Init();
         camManager = CameraController.singleton;
         if (isDefault)
         {
             myController = Controller.Active;
             camManager.Init(this.transform);
+			motor.playerAtual = transform.gameObject;
         }
         else
             myController = Controller.Inactive;
-		motor = GetComponent<PlayerMotor>();
-        motor.Init();
 	}
 
 
@@ -88,9 +89,6 @@ public class PlayerController : MonoBehaviour {
         delta = Time.deltaTime;
 
 		//camManager.Tick(delta);
-		if (interactibleFocus != null) {
-			props = interactibleFocus.GetComponent<Properties> ();
-		}
 		if (!GlobalVariablesCaverna.isPaused) {
 			switch (myController) {
 			case Controller.Active:
@@ -111,7 +109,7 @@ public class PlayerController : MonoBehaviour {
     {
         
     }
-
+// registra os inputs de moviemntação
     void GetInputs()
     {
 		xMov = Input.GetAxisRaw ("Horizontal");
@@ -125,7 +123,7 @@ public class PlayerController : MonoBehaviour {
 
 		rightAxis_down = Input.GetButtonUp ("Fire2");
     }
-
+// atualiza os valores de movimento referente aos inputs
     void UpdateMotor()
     {
         
@@ -141,38 +139,35 @@ public class PlayerController : MonoBehaviour {
 
 
 		if (rightAxis_down) {
-			motor.lockOn = !motor.lockOn;
-			if (motor.lockonTarget == null)
+			motor.lockonTarget = SwitchFocus.TrocaAlvo();
+			if (motor.lockonTarget != null){
+				motor.lockOn = true;
+			}
+			else{
 				motor.lockOn = false;
-			Debug.Log (motor.lockOn);
-
-			Debug.Log (camManager.lockonTarget);
-			Debug.Log (motor.lockonTarget.transform);
+			}
 			camManager.lockonTarget = motor.lockonTarget;
-			Debug.Log (camManager.lockonTarget);
-			Debug.Log (motor.lockonTarget);
 			camManager.lockOn = motor.lockOn;
 		}
+		
 
         
 
     }
 
-
+// libera a interação em caso de proximidade
     public void OnTriggerEnter(Collider other)
     {
         if (myController == Controller.Active)
         {
             if (other.gameObject.tag == ("Interactible"))
             {
-                if (interactibleFocus != null)
-                {
-                }
-                else
+                if (interactibleFocus == null)
                     interactibleFocus = other.gameObject;
             }
         }
     }
+ // desativa interação com objetos
     private void OnTriggerExit(Collider other)
     {
         if (myController == Controller.Active)
@@ -183,4 +178,15 @@ public class PlayerController : MonoBehaviour {
             }
         }
     }
+// zera os valores de lock on de camera
+	public void ResetLockon(){
+		if(motor != null){
+			motor.lockonTarget = null;
+			motor.lockOn = false;
+		}
+		if(camManager != null){
+			camManager.lockonTarget = null;
+			camManager.lockOn = false;
+		}
+	}
 }

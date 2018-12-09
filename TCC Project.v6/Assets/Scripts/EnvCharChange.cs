@@ -1,41 +1,57 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class EnvCharChange : MonoBehaviour {
 
-
+// script de mudança de material ao trocar de personagem
 	public Material[] TreeColorMat;
 	Material[] CurrMats;
 	Renderer rend;
 	public int matIndex;
-	// Use this for initialization
 	void Start () {
 		rend = GetComponent<Renderer> ();
 	}
+
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+//métodos para troca de texturas referente a cada um dos 4 personagens
 	public void Johanna(){
-		CurrMats = rend.materials;
-		CurrMats[matIndex] = TreeColorMat [0];
-		rend.materials = CurrMats;
-<<<<<<< HEAD
-=======
-
->>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
+		try{
+		if (rend != null && TreeColorMat[0] != null) {
+			CurrMats = rend.materials;
+			CurrMats [matIndex] = TreeColorMat [0];
+			rend.materials = CurrMats;
+		}
+		}
+		catch(Exception e){
+		return;
+		}
 	}
 	public void Tommy(){
-		CurrMats = rend.materials;
-		CurrMats[matIndex] = TreeColorMat [1];
-		rend.materials = CurrMats;
-<<<<<<< HEAD
-    }
-=======
-		print ("VAI");
+		try{
+		if (rend != null && TreeColorMat[1] != null) {
+			CurrMats = rend.materials;
+			CurrMats [matIndex] = TreeColorMat [1];
+			rend.materials = CurrMats;
+		}
+		}
+		catch(Exception e){
+		return;
+		}
 	}
->>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
+	public void Bia(){
+		if (rend != null) {
+			CurrMats = rend.materials;
+			CurrMats [matIndex] = TreeColorMat [2];
+			rend.materials = CurrMats;
+		}
+	}
+	public void Yuki(){
+		if (rend != null) {
+			CurrMats = rend.materials;
+			CurrMats [matIndex] = TreeColorMat [3];
+			rend.materials = CurrMats;
+		}
+	}
 }

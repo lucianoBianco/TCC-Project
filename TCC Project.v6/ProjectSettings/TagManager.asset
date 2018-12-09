@@ -7,6 +7,10 @@ TagManager:
   - Ground
   - Interactible
   - Note
+  - Fire
+  - FocusObj
+  - Asobrab
+  - notas3D
   layers:
   - Default
   - TransparentFX
@@ -17,6 +21,8 @@ TagManager:
   - 
   - 
   - board
+  - Controller
+  - CameraIgnore
   - 
   - 
   - 
@@ -32,9 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - IgnoreLight
   - 
   - 
   - 

@@ -1,0 +1,398 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PlayingMask
+  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Girl_Body_Geo2
+    m_Weight: 0
+  - m_Path: Girl_Body_Geo2/transform2
+    m_Weight: 0
+  - m_Path: group1
+    m_Weight: 0
+  - m_Path: left
+    m_Weight: 0
+  - m_Path: null1
+    m_Weight: 0
+  - m_Path: Oculos_Tommy_grp
+    m_Weight: 0
+  - m_Path: Oculos_Tommy_grp/pCylinder2
+    m_Weight: 0
+  - m_Path: Oculos_Tommy_grp/pCylinder2/transform19
+    m_Weight: 0
+  - m_Path: Oculos_Tommy_grp/pCylinder3
+    m_Weight: 0
+  - m_Path: Oculos_Tommy_grp/pCylinder3/transform22
+    m_Weight: 0
+  - m_Path: polySurface10
+    m_Weight: 0
+  - m_Path: polySurface10/transform12
+    m_Weight: 0
+  - m_Path: Tommy_geo
+    m_Weight: 0
+  - m_Path: "Tommy_IKHandle_Bra\xE7o_dir"
+    m_Weight: 1
+  - m_Path: "Tommy_IKHandle_Bra\xE7o_dir_crv_grp"
+    m_Weight: 1
+  - m_Path: "Tommy_IKHandle_Bra\xE7o_dir_crv_grp/Tommy_IKHandle_Bra\xE7o_dir_crv"
+    m_Weight: 1
+  - m_Path: "Tommy_IKHandle_Bra\xE7o_esq"
+    m_Weight: 1
+  - m_Path: "Tommy_IKHandle_Bra\xE7o_esq_crv_grp"
+    m_Weight: 1
+  - m_Path: "Tommy_IKHandle_Bra\xE7o_esq_crv_grp/Tommy_IKHandle_Bra\xE7o_esq_crv"
+    m_Weight: 1
+  - m_Path: Tommy_IKHandle_Perna_dir_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_dir_crv_grp/Tommy_IKHandle_Perna_dir_crv
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_dir_crv_grp/Tommy_IKHandle_Perna_dir_crv/Locator_Perna_dir
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_dir_crv_grp/Tommy_IKHandle_Perna_dir_crv/Tommy_IKHandle_Calcanhar_dir_grp
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_dir_crv_grp/Tommy_IKHandle_Perna_dir_crv/Tommy_IKHandle_Calcanhar_dir_grp/Tommy_IKHandle_PontaPe_dir_grp
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_dir_crv_grp/Tommy_IKHandle_Perna_dir_crv/Tommy_IKHandle_Calcanhar_dir_grp/Tommy_IKHandle_PontaPe_dir_grp/Tommy_IKHandle_Pe_A_dir_grp
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_dir_crv_grp/Tommy_IKHandle_Perna_dir_crv/Tommy_IKHandle_Calcanhar_dir_grp/Tommy_IKHandle_PontaPe_dir_grp/Tommy_IKHandle_Pe_A_dir_grp/Tommy_IKHandle_Perna_dir
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_dir_crv_grp/Tommy_IKHandle_Perna_dir_crv/Tommy_IKHandle_Calcanhar_dir_grp/Tommy_IKHandle_PontaPe_dir_grp/Tommy_IKHandle_Pe_BeC_dir_grp
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_dir_crv_grp/Tommy_IKHandle_Perna_dir_crv/Tommy_IKHandle_Calcanhar_dir_grp/Tommy_IKHandle_PontaPe_dir_grp/Tommy_IKHandle_Pe_BeC_dir_grp/Tommy_IKHandle_Pe_B_dir
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_dir_crv_grp/Tommy_IKHandle_Perna_dir_crv/Tommy_IKHandle_Calcanhar_dir_grp/Tommy_IKHandle_PontaPe_dir_grp/Tommy_IKHandle_Pe_BeC_dir_grp/Tommy_IKHandle_Pe_C_dir
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_esq_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_esq_crv_grp/Tommy_IKHandle_Perna_esq_crv
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_esq_crv_grp/Tommy_IKHandle_Perna_esq_crv/Locator_Perna_esq
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_esq_crv_grp/Tommy_IKHandle_Perna_esq_crv/Tommy_IKHandle_Calcanhar_esq_grp
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_esq_crv_grp/Tommy_IKHandle_Perna_esq_crv/Tommy_IKHandle_Calcanhar_esq_grp/Tommy_IKHandle_PontaPe_esq_grp
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_esq_crv_grp/Tommy_IKHandle_Perna_esq_crv/Tommy_IKHandle_Calcanhar_esq_grp/Tommy_IKHandle_PontaPe_esq_grp/Tommy_IKHandle_Pe_A_esq_grp
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_esq_crv_grp/Tommy_IKHandle_Perna_esq_crv/Tommy_IKHandle_Calcanhar_esq_grp/Tommy_IKHandle_PontaPe_esq_grp/Tommy_IKHandle_Pe_A_esq_grp/Tommy_IKHandle_Perna_esq
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_esq_crv_grp/Tommy_IKHandle_Perna_esq_crv/Tommy_IKHandle_Calcanhar_esq_grp/Tommy_IKHandle_PontaPe_esq_grp/Tommy_IKHandle_Pe_BeC_esq_grp
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_esq_crv_grp/Tommy_IKHandle_Perna_esq_crv/Tommy_IKHandle_Calcanhar_esq_grp/Tommy_IKHandle_PontaPe_esq_grp/Tommy_IKHandle_Pe_BeC_esq_grp/Tommy_IKHandle_Pe_B_esq
+    m_Weight: 0
+  - m_Path: Tommy_IKHandle_Perna_esq_crv_grp/Tommy_IKHandle_Perna_esq_crv/Tommy_IKHandle_Calcanhar_esq_grp/Tommy_IKHandle_PontaPe_esq_grp/Tommy_IKHandle_Pe_BeC_esq_grp/Tommy_IKHandle_Pe_C_esq
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp
+    m_Weight: 1
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt/Tommy_Perna_B_dir_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt/Tommy_Perna_B_dir_jnt/Tommy_Pe_A_dir_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt/Tommy_Perna_B_dir_jnt/Tommy_Pe_A_dir_jnt/Tommy_Pe_B_dir_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt/Tommy_Perna_B_dir_jnt/Tommy_Pe_A_dir_jnt/Tommy_Pe_B_dir_jnt/Tommy_Pe_C_dir_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt_FK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt_FK/Tommy_Perna_B_dir_jnt_FK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt_FK/Tommy_Perna_B_dir_jnt_FK/Tommy_Pe_A_dir_jnt_FK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt_FK/Tommy_Perna_B_dir_jnt_FK/Tommy_Pe_A_dir_jnt_FK/Tommy_Pe_B_dir_jnt_FK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt_IK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt_IK/Tommy_Perna_B_dir_jnt_IK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt_IK/Tommy_Perna_B_dir_jnt_IK/Tommy_Pe_A_dir_jnt_IK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_dir_jnt_IK/Tommy_Perna_B_dir_jnt_IK/Tommy_Pe_A_dir_jnt_IK/Tommy_Pe_B_dir_jnt_IK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt/Tommy_Perna_B_esq_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt/Tommy_Perna_B_esq_jnt/Tommy_Pe_A_esq_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt/Tommy_Perna_B_esq_jnt/Tommy_Pe_A_esq_jnt/Tommy_Pe_B_esq_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt/Tommy_Perna_B_esq_jnt/Tommy_Pe_A_esq_jnt/Tommy_Pe_B_esq_jnt/Tommy_Pe_C_esq_jnt
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt_FK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt_FK/Tommy_Perna_B_esq_jnt_FK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt_FK/Tommy_Perna_B_esq_jnt_FK/Tommy_Pe_A_esq_jnt_FK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt_FK/Tommy_Perna_B_esq_jnt_FK/Tommy_Pe_A_esq_jnt_FK/Tommy_Pe_B_esq_jnt_FK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt_IK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt_IK/Tommy_Perna_B_esq_jnt_IK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt_IK/Tommy_Perna_B_esq_jnt_IK/Tommy_Pe_A_esq_jnt_IK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Bacia_A_jnt/Tommy_Bacia_B_jnt/Tommy_Perna_A_esq_jnt_IK/Tommy_Perna_B_esq_jnt_IK/Tommy_Pe_A_esq_jnt_IK/Tommy_Pe_B_esq_jnt_IK
+    m_Weight: 0
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt
+    m_Weight: 1
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt
+    m_Weight: 1
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt
+    m_Weight: 1
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Anelar_A_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Anelar_A_dir_jnt/Tommy_Anelar_B_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Anelar_A_dir_jnt/Tommy_Anelar_B_dir_jnt/Tommy_Anelar_C_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Anelar_A_dir_jnt/Tommy_Anelar_B_dir_jnt/Tommy_Anelar_C_dir_jnt/Tommy_Anelar_FINAL_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Dedao_A_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Dedao_A_dir_jnt/Tommy_Dedao_B_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Dedao_A_dir_jnt/Tommy_Dedao_B_dir_jnt/Tommy_Dedao_C_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Dedao_A_dir_jnt/Tommy_Dedao_B_dir_jnt/Tommy_Dedao_C_dir_jnt/Tommy_Dedao_FINAL_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Indicador_A_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Indicador_A_dir_jnt/Tommy_Indicador_B_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Indicador_A_dir_jnt/Tommy_Indicador_B_dir_jnt/Tommy_Indicador_C_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Indicador_A_dir_jnt/Tommy_Indicador_B_dir_jnt/Tommy_Indicador_C_dir_jnt/Tommy_Indicador_FINAL_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Medio_A_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Medio_A_dir_jnt/Tommy_Medio_B_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Medio_A_dir_jnt/Tommy_Medio_B_dir_jnt/Tommy_Medio_C_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Medio_A_dir_jnt/Tommy_Medio_B_dir_jnt/Tommy_Medio_C_dir_jnt/Tommy_Medio_FINAL_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Mindinho_A_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Mindinho_A_dir_jnt/Tommy_Mindinho_B_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Mindinho_A_dir_jnt/Tommy_Mindinho_B_dir_jnt/Tommy_Mindinho_C_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt/Tommy_Bra\xE7o_B_dir_jnt/Tommy_Mao_A_dir_jnt/Tommy_Mao_B_dir_jnt/Tommy_Mindinho_A_dir_jnt/Tommy_Mindinho_B_dir_jnt/Tommy_Mindinho_C_dir_jnt/Tommy_Mindinho_FINAL_dir_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt_FK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt_FK/Tommy_Bra\xE7o_B_dir_jnt_FK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt_FK/Tommy_Bra\xE7o_B_dir_jnt_FK/Tommy_Mao_A_dir_jnt_FK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt_IK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt_IK/Tommy_Bra\xE7o_B_dir_jnt_IK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_dir_jnt/Tommy_Bra\xE7o_A_dir_jnt_IK/Tommy_Bra\xE7o_B_dir_jnt_IK/Tommy_Mao_A_dir_jnt_IK"
+    m_Weight: 1
+  - m_Path: Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Anelar_A_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Anelar_A_esq_jnt/Tommy_Anelar_B_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Anelar_A_esq_jnt/Tommy_Anelar_B_esq_jnt/Tommy_Anelar_C_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Anelar_A_esq_jnt/Tommy_Anelar_B_esq_jnt/Tommy_Anelar_C_esq_jnt/Tommy_Anelar_FINAL_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Dedao_A_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Dedao_A_esq_jnt/Tommy_Dedao_B_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Dedao_A_esq_jnt/Tommy_Dedao_B_esq_jnt/Tommy_Dedao_C_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Dedao_A_esq_jnt/Tommy_Dedao_B_esq_jnt/Tommy_Dedao_C_esq_jnt/Tommy_Dedao_FINAL_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Indicador_A_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Indicador_A_esq_jnt/Tommy_Indicador_B_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Indicador_A_esq_jnt/Tommy_Indicador_B_esq_jnt/Tommy_Indicador_C_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Indicador_A_esq_jnt/Tommy_Indicador_B_esq_jnt/Tommy_Indicador_C_esq_jnt/Tommy_Indicador_FINAL_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Medio_A_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Medio_A_esq_jnt/Tommy_Medio_B_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Medio_A_esq_jnt/Tommy_Medio_B_esq_jnt/Tommy_Medio_C_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Medio_A_esq_jnt/Tommy_Medio_B_esq_jnt/Tommy_Medio_C_esq_jnt/Tommy_Medio_FINAL_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Mindinho_A_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Mindinho_A_esq_jnt/Tommy_Mindinho_B_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Mindinho_A_esq_jnt/Tommy_Mindinho_B_esq_jnt/Tommy_Mindinho_C_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt/Tommy_Bra\xE7o_B_esq_jnt/Tommy_Mao_A_esq_jnt/Tommy_Mao_B_esq_jnt/Tommy_Mindinho_A_esq_jnt/Tommy_Mindinho_B_esq_jnt/Tommy_Mindinho_C_esq_jnt/Tommy_Mindinho_FINAL_esq_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt_FK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt_FK/Tommy_Bra\xE7o_B_esq_jnt_FK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt_FK/Tommy_Bra\xE7o_B_esq_jnt_FK/Tommy_Mao_A_esq_jnt_FK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt_IK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt_IK/Tommy_Bra\xE7o_B_esq_jnt_IK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Ombro_esq_jnt/Tommy_Bra\xE7o_A_esq_jnt_IK/Tommy_Bra\xE7o_B_esq_jnt_IK/Tommy_Mao_A_esq_jnt_IK"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Pesco\xE7o_A_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Pesco\xE7o_A_jnt/Tommy_Pesco\xE7o_B_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Pesco\xE7o_A_jnt/Tommy_Pesco\xE7o_B_jnt/Tommy_Boca_A_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Pesco\xE7o_A_jnt/Tommy_Pesco\xE7o_B_jnt/Tommy_Boca_A_jnt/Tommy_Boca_B_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Pesco\xE7o_A_jnt/Tommy_Pesco\xE7o_B_jnt/Tommy_Cabe\xE7a_A_jnt"
+    m_Weight: 1
+  - m_Path: "Tommy_jnts_grp/Tommy_CGJ_jnt/Tommy_Coluna_A_jnt/Tommy_Coluna_B_jnt/Tommy_Coluna_C_jnt/Tommy_Pesco\xE7o_A_jnt/Tommy_Pesco\xE7o_B_jnt/Tommy_Cabe\xE7a_A_jnt/Tommy_Cabe\xE7a_B_jnt"
+    m_Weight: 1
+  - m_Path: Tommy_Master_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_dir_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_dir_crv_grp/Tommy_Perna_A_dir_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_dir_crv_grp/Tommy_Perna_A_dir_crv/Tommy_Perna_B_dir_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_dir_crv_grp/Tommy_Perna_A_dir_crv/Tommy_Perna_B_dir_crv_grp/Tommy_Perna_B_dir_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_dir_crv_grp/Tommy_Perna_A_dir_crv/Tommy_Perna_B_dir_crv_grp/Tommy_Perna_B_dir_crv/Tommy_Pe_A_dir_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_dir_crv_grp/Tommy_Perna_A_dir_crv/Tommy_Perna_B_dir_crv_grp/Tommy_Perna_B_dir_crv/Tommy_Pe_A_dir_crv_grp/Tommy_Pe_A_dir_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_dir_crv_grp/Tommy_Perna_A_dir_crv/Tommy_Perna_B_dir_crv_grp/Tommy_Perna_B_dir_crv/Tommy_Pe_A_dir_crv_grp/Tommy_Pe_A_dir_crv/Tommy_Pe_B_dir_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_dir_crv_grp/Tommy_Perna_A_dir_crv/Tommy_Perna_B_dir_crv_grp/Tommy_Perna_B_dir_crv/Tommy_Pe_A_dir_crv_grp/Tommy_Pe_A_dir_crv/Tommy_Pe_B_dir_crv_grp/Tommy_Pe_B_dir_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_esq_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_esq_crv_grp/Tommy_Perna_A_esq_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_esq_crv_grp/Tommy_Perna_A_esq_crv/Tommy_Perna_B_esq_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_esq_crv_grp/Tommy_Perna_A_esq_crv/Tommy_Perna_B_esq_crv_grp/Tommy_Perna_B_esq_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_esq_crv_grp/Tommy_Perna_A_esq_crv/Tommy_Perna_B_esq_crv_grp/Tommy_Perna_B_esq_crv/Tommy_Pe_A_esq_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_esq_crv_grp/Tommy_Perna_A_esq_crv/Tommy_Perna_B_esq_crv_grp/Tommy_Perna_B_esq_crv/Tommy_Pe_A_esq_crv_grp/Tommy_Pe_A_esq_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_esq_crv_grp/Tommy_Perna_A_esq_crv/Tommy_Perna_B_esq_crv_grp/Tommy_Perna_B_esq_crv/Tommy_Pe_A_esq_crv_grp/Tommy_Pe_A_esq_crv/Tommy_Pe_B_esq_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Bacia_A_crv_grp/Tommy_Bacia_A_crv/Tommy_Bacia_B_crv_grp/Tommy_Bacia_B_crv/Tommy_Perna_A_esq_crv_grp/Tommy_Perna_A_esq_crv/Tommy_Perna_B_esq_crv_grp/Tommy_Perna_B_esq_crv/Tommy_Pe_A_esq_crv_grp/Tommy_Pe_A_esq_crv/Tommy_Pe_B_esq_crv_grp/Tommy_Pe_B_esq_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_dir_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_dir_crv_grp/Tommy_Ombro_dir_crv
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_dir_crv_grp/Tommy_Ombro_dir_crv/Locator_Bra\xE7o_dir"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_dir_crv_grp/Tommy_Ombro_dir_crv/Tommy_Bra\xE7o_A_dir_crv_grp"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_dir_crv_grp/Tommy_Ombro_dir_crv/Tommy_Bra\xE7o_A_dir_crv_grp/Tommy_Bra\xE7o_A_dir_crv"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_dir_crv_grp/Tommy_Ombro_dir_crv/Tommy_Bra\xE7o_A_dir_crv_grp/Tommy_Bra\xE7o_A_dir_crv/Tommy_Bra\xE7o_B_dir_crv_grp"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_dir_crv_grp/Tommy_Ombro_dir_crv/Tommy_Bra\xE7o_A_dir_crv_grp/Tommy_Bra\xE7o_A_dir_crv/Tommy_Bra\xE7o_B_dir_crv_grp/Tommy_Bra\xE7o_B_dir_crv"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_dir_crv_grp/Tommy_Ombro_dir_crv/Tommy_Bra\xE7o_A_dir_crv_grp/Tommy_Bra\xE7o_A_dir_crv/Tommy_Bra\xE7o_B_dir_crv_grp/Tommy_Bra\xE7o_B_dir_crv/Tommy_Mao_A_crv_grp"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_dir_crv_grp/Tommy_Ombro_dir_crv/Tommy_Bra\xE7o_A_dir_crv_grp/Tommy_Bra\xE7o_A_dir_crv/Tommy_Bra\xE7o_B_dir_crv_grp/Tommy_Bra\xE7o_B_dir_crv/Tommy_Mao_A_crv_grp/Tommy_Mao_A_crv"
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_esq_crv_grp
+    m_Weight: 0
+  - m_Path: Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_esq_crv_grp/Tommy_Ombro_esq_crv
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_esq_crv_grp/Tommy_Ombro_esq_crv/Locator_Bra\xE7o_esq"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_esq_crv_grp/Tommy_Ombro_esq_crv/Tommy_Bra\xE7o_A_esq_crv_grp"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_esq_crv_grp/Tommy_Ombro_esq_crv/Tommy_Bra\xE7o_A_esq_crv_grp/Tommy_Bra\xE7o_A_esq_crv"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_esq_crv_grp/Tommy_Ombro_esq_crv/Tommy_Bra\xE7o_A_esq_crv_grp/Tommy_Bra\xE7o_A_esq_crv/Tommy_Bra\xE7o_B_esq_crv_grp"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_esq_crv_grp/Tommy_Ombro_esq_crv/Tommy_Bra\xE7o_A_esq_crv_grp/Tommy_Bra\xE7o_A_esq_crv/Tommy_Bra\xE7o_B_esq_crv_grp/Tommy_Bra\xE7o_B_esq_crv"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_esq_crv_grp/Tommy_Ombro_esq_crv/Tommy_Bra\xE7o_A_esq_crv_grp/Tommy_Bra\xE7o_A_esq_crv/Tommy_Bra\xE7o_B_esq_crv_grp/Tommy_Bra\xE7o_B_esq_crv/Tommy_Mao_A_crv_grp
+      1"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Ombro_esq_crv_grp/Tommy_Ombro_esq_crv/Tommy_Bra\xE7o_A_esq_crv_grp/Tommy_Bra\xE7o_A_esq_crv/Tommy_Bra\xE7o_B_esq_crv_grp/Tommy_Bra\xE7o_B_esq_crv/Tommy_Mao_A_crv_grp
+      1/Tommy_Mao_A_crv 1"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Pesco\xE7o_A_crv_grp"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Pesco\xE7o_A_crv_grp/Tommy_Pesco\xE7o_A_crv"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Pesco\xE7o_A_crv_grp/Tommy_Pesco\xE7o_A_crv/Tommy_Pesco\xE7o_b_crv_grp"
+    m_Weight: 0
+  - m_Path: "Tommy_Master_crv_grp/Tommy_Master_crv/Tommy_Root_crv_grp/Tommy_Root_crv/Tommy_Coluna_A_crv_grp/Tommy_Coluna_A_crv/Tommy_Coluna_B_crv_grp/Tommy_Coluna_B_crv/Tommy_Coluna_C_crv_grp/Tommy_Coluna_C_crv/Tommy_Pesco\xE7o_A_crv_grp/Tommy_Pesco\xE7o_A_crv/Tommy_Pesco\xE7o_b_crv_grp/Tommy_Pesco\xE7o_B_crv"
+    m_Weight: 0

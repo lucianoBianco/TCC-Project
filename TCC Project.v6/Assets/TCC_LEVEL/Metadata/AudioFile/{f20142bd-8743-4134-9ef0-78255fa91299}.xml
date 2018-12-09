@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{f20142bd-8743-4134-9ef0-78255fa91299}">
+        <property name="assetPath">
+            <value>Cave_Region/Cave_Loop.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>44.159999999999997</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{99a67ba8-e55e-42a3-8b94-3c34777c617b}</destination>
+        </relationship>
+    </object>
+</objects>

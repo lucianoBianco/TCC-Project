@@ -1,0 +1,398 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 114036094550040494}
+  - {fileID: 114039216557998490}
+  EditorEvents:
+  - {fileID: 114105872526557520}
+  MasterBankRef: {fileID: 114039216557998490}
+  StringsBankRef: {fileID: 114036094550040494}
+  stringsBankWriteTime: 636791134257263303
+  cacheVersion: 2
+--- !u!114 &114036094550040494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\Menu_FMOD\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636791134257263303
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 720
+  Exists: 1
+--- !u!114 &114039216557998490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\LucianoMartins\Documents\TCC\TCC Project.v6 (2)\Assets\Menu_FMOD\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636791134272014896
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 652352
+  Exists: 1
+--- !u!114 &114077486783662206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Menu_Song
+  guid: b5136ca86c0d6343808ec3f5f92ac3b0
+  Banks:
+  - {fileID: 114127257027582776}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114380432910799602}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 48960
+--- !u!114 &114105872526557520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Menu_Song
+  guid: b5136ca86c0d6343808ec3f5f92ac3b0
+  Banks:
+  - {fileID: 114039216557998490}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114796277601854674}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 48960
+--- !u!114 &114127257027582776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Gabriel\Desktop\TCC Project.v6 (2)\Assets\Menu_FMOD\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636791100715540590
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 652352
+  Exists: 1
+--- !u!114 &114201821813878864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Gabriel\Desktop\TCC Project.v6 (2)\Assets\TCC_LEVEL\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636790526319200655
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2463296
+  Exists: 0
+--- !u!114 &114238104311457138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Loops
+  Min: 0
+  Max: 90
+  Default: 0
+--- !u!114 &114323761337449250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Cave
+  guid: c37508663296c84bb390f6883e0f3b69
+  Banks: []
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114780699127773294}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 182400
+--- !u!114 &114380432910799602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: MENU
+  Min: 0
+  Max: 2
+  Default: 0
+--- !u!114 &114432574562150016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Loops
+  Min: 0
+  Max: 90
+  Default: 0
+--- !u!114 &114492281356977326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Gabriel\Desktop\TCC Project.v6 (2)\Assets\TCC_LEVEL\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636790526319200655
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2463296
+  Exists: 1
+--- !u!114 &114620559210656178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\ra00179024\Desktop\TCC Project.v6\Assets\TCC_LEVEL\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636790803957005279
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2463296
+  Exists: 1
+--- !u!114 &114684535752503292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\Menu_FMOD\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636791100715590211
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 720
+  Exists: 1
+--- !u!114 &114739498691730620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Loops
+  Min: 0
+  Max: 90
+  Default: 0
+--- !u!114 &114780699127773294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Loops
+  Min: 0
+  Max: 90
+  Default: 0
+--- !u!114 &114796277601854674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: MENU
+  Min: 0
+  Max: 2
+  Default: 0
+--- !u!114 &114797153601571170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\LucianoMartins\Documents\TCC\TCC Project.v6 (2)\Assets\TCC_LEVEL\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636790535533675178
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2463296
+  Exists: 0
+--- !u!114 &114854817928305774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Loops
+  Min: 0
+  Max: 90
+  Default: 0
+--- !u!114 &114905707422852734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Gabriel\Desktop\TCC Project.v6 (2)\Assets\TCC_LEVEL\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636790526319200655
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2463296
+  Exists: 1
+--- !u!114 &114938794914408906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: MENU
+  Min: 0
+  Max: 2
+  Default: 0
+--- !u!114 &114984142032273282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Gabriel\Desktop\TCC Project.v6 (2)\Assets\Menu_FMOD\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636791112403275641
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 652352
+  Exists: 0

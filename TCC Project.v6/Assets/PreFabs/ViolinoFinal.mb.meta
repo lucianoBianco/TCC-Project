@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 5046fc34238d84c4aa855b3cedb37402
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: "Locator_Bra\xE7o_esq"
+    100002: "Tommy_Bra\xE7o_A_esq_crv"
+    100004: "Tommy_Bra\xE7o_A_esq_crv_grp"
+    100006: "Tommy_Bra\xE7o_B_esq_crv"
+    100008: "Tommy_Bra\xE7o_B_esq_crv_grp"
+    100010: Tommy_CGJ_jnt
+    100012: Tommy_Coluna_A_crv
+    100014: Tommy_Coluna_A_crv_grp
+    100016: Tommy_Coluna_A_jnt
+    100018: Tommy_Coluna_B_crv
+    100020: Tommy_Coluna_B_crv_grp
+    100022: Tommy_Coluna_B_jnt
+    100024: Tommy_Coluna_C_crv
+    100026: Tommy_Coluna_C_crv_grp
+    100028: Tommy_Coluna_C_jnt
+    100030: Tommy_jnts_grp
+    100032: Tommy_Mao_A_crv
+    100034: Tommy_Mao_A_crv_grp
+    100036: Tommy_Master_crv
+    100038: Tommy_Master_crv_grp
+    100040: Tommy_Ombro_esq_crv
+    100042: Tommy_Ombro_esq_crv_grp
+    100044: Tommy_Ombro_esq_jnt
+    100046: Tommy_Root_crv
+    100048: Tommy_Root_crv_grp
+    100050: Violino
+    100052: violino:polySurface9
+    100054: //RootNode
+    400000: "Locator_Bra\xE7o_esq"
+    400002: "Tommy_Bra\xE7o_A_esq_crv"
+    400004: "Tommy_Bra\xE7o_A_esq_crv_grp"
+    400006: "Tommy_Bra\xE7o_B_esq_crv"
+    400008: "Tommy_Bra\xE7o_B_esq_crv_grp"
+    400010: Tommy_CGJ_jnt
+    400012: Tommy_Coluna_A_crv
+    400014: Tommy_Coluna_A_crv_grp
+    400016: Tommy_Coluna_A_jnt
+    400018: Tommy_Coluna_B_crv
+    400020: Tommy_Coluna_B_crv_grp
+    400022: Tommy_Coluna_B_jnt
+    400024: Tommy_Coluna_C_crv
+    400026: Tommy_Coluna_C_crv_grp
+    400028: Tommy_Coluna_C_jnt
+    400030: Tommy_jnts_grp
+    400032: Tommy_Mao_A_crv
+    400034: Tommy_Mao_A_crv_grp
+    400036: Tommy_Master_crv
+    400038: Tommy_Master_crv_grp
+    400040: Tommy_Ombro_esq_crv
+    400042: Tommy_Ombro_esq_crv_grp
+    400044: Tommy_Ombro_esq_jnt
+    400046: Tommy_Root_crv
+    400048: Tommy_Root_crv_grp
+    400050: Violino
+    400052: violino:polySurface9
+    400054: //RootNode
+    2100000: lambert20
+    2100002: lambert19
+    2100004: lambert21
+    2300000: violino:polySurface9
+    3300000: violino:polySurface9
+    4300000: violino:polySurface9
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

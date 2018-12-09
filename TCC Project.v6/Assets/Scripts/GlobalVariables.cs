@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GlobalVariables : MonoBehaviour {
 
+	//controlador da cane da pré banca obsoleto
+
 	public bool lock1 = false;
 	public bool lock2 = false;
 	public bool lock3 = false;
@@ -22,7 +24,7 @@ public class GlobalVariables : MonoBehaviour {
 
 	public bool playingSong = false;
 
-	private Light light;
+	private new Light light;
 	void Start(){
 		
 
@@ -62,14 +64,11 @@ public class GlobalVariables : MonoBehaviour {
 	public void Interact(GameObject go){
 		if (!opened) {
 			if (go == door1) {
-				light = door1.GetComponent<Light> ();
-				light.enabled = true;
+				door1.GetComponent<Light> ().enabled = true;
 				lock1 = true;
-				light = door2.GetComponent<Light> ();
-				light.enabled = false;
+				door2.GetComponent<Light> ().enabled = false;
 				lock2 = false;
-				light = door3.GetComponent<Light> ();
-				light.enabled = false;
+				door3.GetComponent<Light> ().enabled = false;
 				lock3 = false;
 			} else if (go == door2) {
 				if (lock1) {

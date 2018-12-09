@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{ef00477f-7e41-4565-89ea-1daaa2e4e90c}">
+        <property name="assetPath">
+            <value>Forest_Region/Encounter.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>15.359999999999999</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{99a67ba8-e55e-42a3-8b94-3c34777c617b}</destination>
+        </relationship>
+    </object>
+</objects>

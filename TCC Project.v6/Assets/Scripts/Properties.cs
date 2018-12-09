@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Properties : MonoBehaviour {
-	GlobalVariables vars;
+	GlobalVariablesCaverna vars;
 	public GameObject varsObj;
 
 	public bool active = false;
 
+//atributo de interação de objetos
 
-	// Use this for initialization
 	void Start () {
-		vars = varsObj.GetComponent<GlobalVariables> ();
+		vars = varsObj.GetComponent<GlobalVariablesCaverna> ();
 	}
-	
-	// Update is called once per frame
 	void Update () {
 		
 	}

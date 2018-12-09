@@ -5,6 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerMotor : MonoBehaviour {
 
+// gerenciador de movimentação do personagem
     [Header("Init")]
     public GameObject activeModel;
     [HideInInspector]
@@ -21,25 +22,34 @@ public class PlayerMotor : MonoBehaviour {
     public float movAmount;
 
     [Header("Stats")]
-    public float speed = 5f;
-    public float rotateSpeed = 5f;
+    public float speed = 8f;
+    public float rotateSpeed = 7f;
 	public Vector3 movFINAL = Vector3.zero;
+	public float toGround = 0.5f;
 
 
     [Header("States")]
     public bool musicMode;
 	public bool lockOn;
+    public bool movBlocked = false;
+	public bool puzzleBlocked = false;
+	public bool onGround;
 
-	[Header("Other")]
-	public Transform lockonTarget;
+    [Header("Other")]
+	public GameObject lockonTarget;
 
-
+	//float dist;
     [HideInInspector]
     public float delta;
-
+	[HideInInspector]
+	public GameObject playerAtual;
+	[HideInInspector]
+	public LayerMask ignoreLayers;
 
     Vector3 movRB;
-    bool jump = false;
+	float currentSpeed;
+	Vector3 lastPosition;
+	private float positionY;
 
     public void Init()
     {
@@ -47,8 +57,27 @@ public class PlayerMotor : MonoBehaviour {
 		agent = GetComponent<NavMeshAgent>();
 		rb = GetComponent<Rigidbody> ();
 		//Useless with navMesh Agent
+
+		rb.angularDrag = 999;
+		//rb.drag = 4;
+		rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+		gameObject.layer = 8;
+		ignoreLayers = ~(1 << 9);
+        agent.enabled = false;
 	    
     }
+	void Start(){
+		
+		if (playerAtual == null){
+			playerAtual = GameObject.Find ("Johanna");
+		}
+		if (playerAtual.GetComponent<PlayerController> ().myController == PlayerController.Controller.Inactive) {
+			foreach (GameObject player in GameObject.FindGameObjectsWithTag ("Player")) {
+                if (player.GetComponent<PlayerController>() != null && player.GetComponent<PlayerController>().myController == PlayerController.Controller.Active)
+                    playerAtual = player;
+			}
+		}
+	}
 
     void SetupAnimator()
     {
@@ -70,83 +99,99 @@ public class PlayerMotor : MonoBehaviour {
 
     public void Tick(float d)
     {
-        PerformMovement(d);
+		onGround = OnGround ();
+    	PerformMovement(d);
     }
 
+    void FixedUpdate(){
+		positionY = transform.position.y;
+    }
+	
+
 	void PerformMovement(float d){
-		if(movDir != Vector3.zero){
-            //transform.Translate(-movDir * (speed * movAmount) * d);
-            //rb.velocity = movDir * (speed*movAmount);
-            delta = d;
+		if (transform.GetComponent<PlayerController> ().myController == PlayerController.Controller.Active) {
 
-            if (!jump)
-            {
-                movFINAL = movDir * (speed * movAmount) * delta;
-                rb.velocity = Vector3.zero;
-                if (transform.GetComponent<PlayerController>().myController == PlayerController.Controller.Active)
-                    agent.Move(movFINAL);
-                else
-                {
-                    agent.Move(Vector3.zero);
-                    movAmount = 0;
-                }
-            }
-            else
-            { }
-			Vector3 targetDir = movDir;
-            targetDir.y = 0;
-            //targetDir = transform.forward;
-            Quaternion tr = Quaternion.LookRotation(targetDir);
-            Quaternion targetRotation = Quaternion.Slerp(activeModel.transform.rotation, tr, delta * movAmount * rotateSpeed);
-			activeModel.transform.rotation = targetRotation;
+			// moviemntação ativa do jogador
+            agent.enabled = false;
+			
+			
+			delta = d;
+
+        	movAmount = (!movBlocked) ? movAmount : 0;
+			movFINAL = movDir * (speed * movAmount);// * delta;
+			movFINAL.y = rb.velocity.y;
+			if (onGround){
+				rb.velocity = movFINAL;
+			}
+			else {
+				movFINAL.y = 0;
+				float velocidadeY = rb.velocity.y;
+				rb.AddForce (movFINAL * 3);
+				rb.velocity = Vector3.ClampMagnitude(rb.velocity, 5);
+				Vector3 velTemp = rb.velocity;
+				velTemp.y = velocidadeY;
+				rb.velocity = velTemp;
+			}
+
+			
+			Vector3 targetDir = /*(!lockOn)? movDir : lockonTarget.transform.position - transform.position;*/movDir;
+			targetDir.y = 0;
+			//targetDir = transform.forward;
+			if(targetDir.magnitude > 0){
+				Quaternion tr = Quaternion.LookRotation (targetDir);
+				Quaternion targetRotation = Quaternion.Slerp (transform.rotation, tr, delta * movAmount * rotateSpeed);
+				transform.rotation = targetRotation;
+			}
+		}else if(transform.GetComponent<PlayerController> ().myController == PlayerController.Controller.Inactive){
+
+			//movimentaç~~ao do personagem pela IA
+			if(!puzzleBlocked){
+				agent.enabled = true;
+				agent.destination = playerAtual.transform.position;
+				agent.stoppingDistance = 3f;
+				currentSpeed = Mathf.Lerp (currentSpeed, (transform.position - lastPosition).magnitude / Time.deltaTime, 0.25f);
+				lastPosition = transform.position;
+				movAmount = currentSpeed;
+			}
 		}
-        else
-        movFINAL = Vector3.zero;
-
-
-        movRB = movFINAL;
     }
 
 	public void Jump(bool isJump){
         
-		if (isJump && !jump) {
-			jump = true;
-			agent.enabled = false;
-            rb.velocity = Vector3.zero;
-            float rbY = rb.velocity.y;
-            float rbX = movRB.x / delta;
-            float rbZ = movRB.z / delta;
-            Vector3 newVel = new Vector3(rbX, rbY, rbZ);
-            rb.velocity = newVel;
-            rb.AddForce ((Vector3.up) * 250);
-			isJump = false;
+        // animação de pulo e falha nos puzzles de luz em caso de pulo
+		if (isJump && onGround && !movBlocked) {
+            rb.AddForce ((Vector3.up) * 6, ForceMode.Impulse);
+            anim.SetTrigger("Jump");
+			if(gameObject.GetComponent<JohannaSkills> () != null){
+				PuzzleLuz[] puzzles = gameObject.GetComponent<JohannaSkills> ().puzzles;
+				for (int i = 0; i < puzzles.Length; i++) {
+					puzzles [i].ResetPuzzle ();
+				}
+			}
 		}
 
 
+	
 	}
+	public bool OnGround(){
 
-	void OnCollisionEnter(Collision collision){
+		// raycast para definir se o personagem está no chão
+		bool r = false;
 
-		if (collision.gameObject.tag == "Ground") {
-			agent.enabled = true;
-            rb.velocity = Vector3.zero;
-			jump = false;
+		Vector3 origin = transform.position + (Vector3.up * toGround);
+		Vector3 dir = -Vector3.up;
+		float dis = toGround + 0.1f;
+		Debug.DrawRay (origin, dir * dis);
+		RaycastHit hit;
+		if (Physics.Raycast (origin, dir, out hit, dis, ignoreLayers)) {
+			r = true;
+			Vector3 targetPosition = hit.point;
 		}
-
+		if(transform.position.y == positionY){
+			r = true;
+		}
+		if(!agent.enabled)
+        	anim.SetBool("OnGround", r);
+		return r;
 	}
-
-    /*Brackeys
-    //recebe o vetor de movimento
-    public void Move(Vector3 _velocity)
-    {
-
-        movDir = _velocity;
-    }
-
-    // executar o movimento no update de física
-    void FixedUpdate()
-    {
-        PerformMovement();
-    }
-    */
 }

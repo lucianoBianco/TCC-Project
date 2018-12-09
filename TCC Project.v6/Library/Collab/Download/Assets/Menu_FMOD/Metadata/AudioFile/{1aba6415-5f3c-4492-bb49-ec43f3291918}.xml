@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{1aba6415-5f3c-4492-bb49-ec43f3291918}">
+        <property name="assetPath">
+            <value>Piano_Loop.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>15.359999999999999</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{ff58e7e1-6914-4d53-b3f1-8e6e617598bc}</destination>
+        </relationship>
+    </object>
+</objects>

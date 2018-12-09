@@ -5,9 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Cenas/Main Menu.unity
     guid: 2c4569b97eb8c514186c181ad32dac72
   - enabled: 1
+    path: Assets/Cenas/Menu2.unity
+    guid: f62217fdb05056d40b85894532343f3d
+  - enabled: 1
     path: Assets/Cenas/Caverna.unity
     guid: f34b5ff0ba89c7440ad258363798da7b
+  m_configObjects: {}

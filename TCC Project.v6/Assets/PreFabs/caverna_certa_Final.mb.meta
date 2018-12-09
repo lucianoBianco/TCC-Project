@@ -1,0 +1,268 @@
+fileFormatVersion: 2
+guid: 659b05a16fc9441438d012d492c11e98
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: caverna_Torta_2_group1
+    100004: caverna_Torta_3_group1
+    100006: caverna_Torta_4_group1
+    100008: caverna_Torta_5_group1
+    100010: caverna_Torta_6_group1
+    100012: group1
+    100014: pCylinder1
+    100016: polySurface10
+    100018: polySurface10 1
+    100020: polySurface2
+    100022: polySurface2 1
+    100024: polySurface24
+    100026: polySurface25
+    100028: polySurface26
+    100030: polySurface27
+    100032: polySurface28
+    100034: polySurface3
+    100036: polySurface30
+    100038: polySurface30 1
+    100040: polySurface31
+    100042: polySurface31 1
+    100044: polySurface4
+    100046: polySurface4 1
+    100048: pPipe23
+    100050: pPipe3
+    100052: pPipe3 1
+    100054: pPipe3 2
+    100056: pPipe3 3
+    100058: pPipe3 4
+    100060: pPipe3 5
+    100062: pPlane1
+    100064: pPlane1 1
+    100066: pPlane1 2
+    100068: pPlane1 3
+    100070: pPlane1 4
+    100072: pPlane1 5
+    100074: pPlane1 6
+    100076: pPlane2
+    100078: pPlane2 1
+    100080: pPlane2 2
+    100082: pPlane2 3
+    100084: pPlane2 4
+    100086: pPlane2 5
+    100088: pPlane2 6
+    100090: pPlane3
+    100092: pPlane5
+    100094: transform1
+    100096: transform1 1
+    100098: transform1 2
+    100100: transform1 3
+    100102: transform1 4
+    100104: transform1 5
+    100106: transform1 6
+    100108: transform10
+    100110: transform11
+    100112: transform12
+    100114: transform13
+    100116: transform14
+    100118: transform15
+    100120: transform16
+    100122: transform17
+    100124: transform18
+    100126: transform19
+    100128: transform2
+    100130: transform2 1
+    100132: transform2 2
+    100134: transform2 3
+    100136: transform2 4
+    100138: transform2 5
+    100140: transform2 6
+    100142: transform20
+    100144: transform3
+    100146: transform3 1
+    100148: transform3 2
+    100150: transform3 3
+    100152: transform3 4
+    100154: transform3 5
+    100156: transform4
+    100158: transform5
+    100160: transform6
+    100162: transform7
+    100164: transform8
+    100166: transform9
+    400000: //RootNode
+    400002: caverna_Torta_2_group1
+    400004: caverna_Torta_3_group1
+    400006: caverna_Torta_4_group1
+    400008: caverna_Torta_5_group1
+    400010: caverna_Torta_6_group1
+    400012: group1
+    400014: pCylinder1
+    400016: polySurface10
+    400018: polySurface10 1
+    400020: polySurface2
+    400022: polySurface2 1
+    400024: polySurface24
+    400026: polySurface25
+    400028: polySurface26
+    400030: polySurface27
+    400032: polySurface28
+    400034: polySurface3
+    400036: polySurface30
+    400038: polySurface30 1
+    400040: polySurface31
+    400042: polySurface31 1
+    400044: polySurface4
+    400046: polySurface4 1
+    400048: pPipe23
+    400050: pPipe3
+    400052: pPipe3 1
+    400054: pPipe3 2
+    400056: pPipe3 3
+    400058: pPipe3 4
+    400060: pPipe3 5
+    400062: pPlane1
+    400064: pPlane1 1
+    400066: pPlane1 2
+    400068: pPlane1 3
+    400070: pPlane1 4
+    400072: pPlane1 5
+    400074: pPlane1 6
+    400076: pPlane2
+    400078: pPlane2 1
+    400080: pPlane2 2
+    400082: pPlane2 3
+    400084: pPlane2 4
+    400086: pPlane2 5
+    400088: pPlane2 6
+    400090: pPlane3
+    400092: pPlane5
+    400094: transform1
+    400096: transform1 1
+    400098: transform1 2
+    400100: transform1 3
+    400102: transform1 4
+    400104: transform1 5
+    400106: transform1 6
+    400108: transform10
+    400110: transform11
+    400112: transform12
+    400114: transform13
+    400116: transform14
+    400118: transform15
+    400120: transform16
+    400122: transform17
+    400124: transform18
+    400126: transform19
+    400128: transform2
+    400130: transform2 1
+    400132: transform2 2
+    400134: transform2 3
+    400136: transform2 4
+    400138: transform2 5
+    400140: transform2 6
+    400142: transform20
+    400144: transform3
+    400146: transform3 1
+    400148: transform3 2
+    400150: transform3 3
+    400152: transform3 4
+    400154: transform3 5
+    400156: transform4
+    400158: transform5
+    400160: transform6
+    400162: transform7
+    400164: transform8
+    400166: transform9
+    2100000: lambert2
+    2100002: lambert3
+    2100004: lambert1
+    2100006: caverna_Torta_1_lambert4
+    2300000: pCylinder1
+    2300002: polySurface31
+    2300004: pPlane5
+    3300000: pCylinder1
+    3300002: polySurface31
+    3300004: pPlane5
+    4300000: pCylinder1
+    4300002: pPlane5
+    4300004: polySurface31
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

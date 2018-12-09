@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{2f4d0d7e-f87b-4b9d-a42d-df28aa7affea}">
+        <property name="assetPath">
+            <value>Cave_Region/Cave_Piano_loop2.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>13.44</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{99a67ba8-e55e-42a3-8b94-3c34777c617b}</destination>
+        </relationship>
+    </object>
+</objects>

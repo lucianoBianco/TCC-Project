@@ -1,58 +1,81 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CharacterSwitch : MonoBehaviour {
 
+	//classe que controla os estados dos personagens jogaveis na troca de controles pelo 'tab'
     public GameObject charJohanna;
-    public GameObject charTommy;
+	public GameObject charTommy;
     CameraController camManager;
-	EnvCharChange[] envChangers;
+	public static EnvCharChange[] envChangers;
 	public GameObject world;
-<<<<<<< HEAD
     public GameObject particlesTommy;
-=======
->>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
-    // Use this for initialization
+	public bool LiberarChar = false;
+	public GameObject particlesJohanna;
+
+	public Animator anim;
+
     void Start () {
         camManager = CameraController.singleton;
-		envChangers = world.GetComponentsInChildren<EnvCharChange> ();
+		envChangers = GameObject.FindObjectsOfType<EnvCharChange>();
     }
 	
-	// Update is called once per frame
+
 	void Update () {
-        if (Input.GetButtonDown("Ação2"))
-        {
-            if (charJohanna.GetComponent<PlayerController>().myController == PlayerController.Controller.Active)
-            {
-                charJohanna.GetComponent<PlayerController>().myController = PlayerController.Controller.Inactive;
-                charTommy.GetComponent<PlayerController>().myController = PlayerController.Controller.Active;
-                camManager.target = charTommy.transform;
-<<<<<<< HEAD
-                particlesTommy.SetActive(true);
-				foreach (EnvCharChange changer in envChangers) {
-					changer.Tommy ();
-=======
-
-				foreach (EnvCharChange changer in envChangers) {
-					changer.Tommy ();
-					print ("PIMBA");
->>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
+		if(LiberarChar){
+			if (Input.GetButtonDown ("Ação2")) {
+				anim.SetTrigger("Switch");
+				if (charJohanna.GetComponent<PlayerController> ().myController == PlayerController.Controller.Active) {
+					charJohanna.GetComponent<PlayerController> ().myController = PlayerController.Controller.Inactive;
+					charJohanna.GetComponent<PlayerController> ().ResetLockon();
+					charTommy.GetComponent<PlayerController> ().ResetLockon();
+					charJohanna.GetComponent<NavMeshAgent>().enabled = true;
+					if(charTommy.GetComponent<NavMeshAgent>().isActiveAndEnabled)
+						charTommy.GetComponent<NavMeshAgent>().ResetPath ();
+					charTommy.GetComponent<NavMeshAgent>().enabled = false;
+					charTommy.GetComponent<PlayerController> ().myController = PlayerController.Controller.Active;
+					charTommy.GetComponentInChildren<Animator>().SetFloat ("Speed", 0);
+					charJohanna.GetComponent<PlayerMotor>().playerAtual = charTommy;
+					camManager.target = charTommy.transform;
+					particlesTommy.SetActive (true);
+					particlesJohanna.SetActive(false);
+					foreach (EnvCharChange changer in envChangers) {
+						changer.Tommy ();
+					}
+				} else if (charTommy.GetComponent<PlayerController> ().myController == PlayerController.Controller.Active) {
+					charJohanna.GetComponent<PlayerController> ().myController = PlayerController.Controller.Active;
+					charJohanna.GetComponent<NavMeshAgent>().enabled = false;
+					charJohanna.GetComponent<PlayerController> ().ResetLockon();
+					charTommy.GetComponent<PlayerController> ().ResetLockon();
+					if (charJohanna.GetComponent<NavMeshAgent>().isActiveAndEnabled)
+						charJohanna.GetComponent<NavMeshAgent>().ResetPath ();
+					charTommy.GetComponent<NavMeshAgent>().enabled = true;
+					charTommy.GetComponent<PlayerController> ().myController = PlayerController.Controller.Inactive;
+					charTommy.GetComponent<PlayerMotor>().playerAtual = charJohanna;
+					camManager.target = charJohanna.transform;
+					particlesTommy.SetActive (false);
+					particlesJohanna.SetActive(true);
+					foreach (EnvCharChange changer in envChangers)
+						changer.Johanna();
 				}
-            }
-            else
-            {
-                charJohanna.GetComponent<PlayerController>().myController = PlayerController.Controller.Active;
-                charTommy.GetComponent<PlayerController>().myController = PlayerController.Controller.Inactive;
-                camManager.target = charJohanna.transform;
-<<<<<<< HEAD
-                particlesTommy.SetActive(false);
-=======
-
->>>>>>> 402ad341a05c3d1af1d977ec893a5661e25d9122
-				foreach (EnvCharChange changer in envChangers)
-					changer.Johanna ();
-            }
-        }
+			}
+		}
 	}
+
+
+//libera o personagem tommy para ser selecionavel apos sair da caverna
+	public void LiberarTommy(){
+		LiberarChar = true;
+		charTommy.GetComponent<PlayerController> ().ResetLockon();
+		if (charJohanna.GetComponent<NavMeshAgent>().isActiveAndEnabled)
+			charJohanna.GetComponent<NavMeshAgent>().ResetPath ();
+		charTommy.GetComponent<NavMeshAgent>().enabled = true;
+        charTommy.GetComponentInChildren<Animator>().SetBool("OnGround", true);
+		charTommy.GetComponent<PlayerController> ().myController = PlayerController.Controller.Inactive;
+		charTommy.GetComponent<PlayerMotor>().playerAtual = charJohanna;
+	}
+
+
 }
